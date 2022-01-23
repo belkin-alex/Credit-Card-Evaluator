@@ -8,13 +8,12 @@ gas_cb = input('Enter Auto & Gas Cashback Percentage as Decimal:')
 grocery_cb = input('Enter Grocery Cashback Percentage as Decimal:')
 misc_cb = input('Enter All Other Cashback Percentage as Decimal:')
 
-csv_input = input('Enter path of desired PNC credit card data: ')
 
 # reading the CSV file
-df = pd.read_csv(csv_input)
+df = pd.read_csv('CreditCardSample.csv')
 
 #Find all rows with purchases
-filtered_df = df.loc[df['Withdrawals'].notnull()]
+filtered_df = df.loc[df['Withdrawals'].notnull()].copy()
 
 #Convert Withdrawals to number
 filtered_df['Withdrawals'] = filtered_df['Withdrawals'].replace('[\$,]', '', regex=True).astype(float)
