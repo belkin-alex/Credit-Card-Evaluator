@@ -33,7 +33,7 @@ restaurant_cb = bounded_input('Restaurant Cashback', 0, 5)
 print(restaurant_cb)
 
 #gas_cb = input('Enter Auto & Gas Cashback Percentage as Decimal:')
-gas_cb = bounded_input('Restaurant Cashback', 0, 5)
+gas_cb = bounded_input('Auto + Gas Cashback', 0, 5)
 print(gas_cb)
 
 #grocery_cb = input('Enter Grocery Cashback Percentage as Decimal:')
