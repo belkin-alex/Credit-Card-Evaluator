@@ -44,8 +44,6 @@ print(grocery_cb)
 misc_cb = bounded_input('All Other Cashback', 0, 5)
 print(misc_cb)
 
-quit()
-
 
 # reading the CSV file
 df = pd.read_csv('CreditCardSample.csv')
